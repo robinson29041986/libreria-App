@@ -1,0 +1,119 @@
+.Container {
+    margin: auto;
+    max-width: 1120px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.Header {
+    background-color: var(--global--color-background);
+    padding: 15px 0px;
+    border-bottom: 1px solid #f2f2f3;
+    color: white;
+}
+
+.Header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-column {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Header-nav {
+    margin-left: 20px;
+}
+
+.Header-ul {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Header-li {
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.Header-notificacion--icon {
+    width: 25px;
+    height: 25px;
+}
+
+.Header-notificacion {
+    display: flex;
+    cursor: pointer;
+
+}
+
+.Header-notificacion--punto {
+    background-color: var(--global--color-primary);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: -2px;
+}
+
+.Header-avatar {
+    position: relative;
+    top: 0px;
+    width: 40px;
+    border-radius: 40%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.Header-avatar-ul {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 150px;
+    background-color: var(--global--color-background);
+    list-style: none;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: #f2f2f3;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.Header-avatar-li {
+    display: flex;
+    gap: 8px;
+    padding: 6px 10px;
+    margin: 4px;
+    align-items: center;
+
+}
+
+.Header-avatar-li:hover {
+    background-color: #a4adb4;
+    border-radius: 4px;
+}
+
+
+
+.Header-avatar--icono {
+    width: 20px;
+    height: 20px;
+}
+
+.Header-avatar--hr {
+    border-width: 0px 0px thin;
+    border-color: rgb(173, 181, 197);
+    border-style: dashed;
+}
+
+@media screen and (max-width: 992px) {
+    .Header-nav {
+        display: none;
+    }
+
+}
