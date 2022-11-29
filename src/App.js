@@ -1,29 +1,28 @@
-
 import './styles/App.css';
-import NavBar from './componentes/navegacion/NavBar.js';
-import Inicio from './paginas/Inicio';
-import Productos from './paginas/Productos';
-import Usuarios from './paginas/Usuarios';
-import Inventario from './paginas/Inventario';
-import PageNotFound from './paginas/PageNotFound';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./views/Layout";
+import Productos from './views/Productos';
+import Usuarios from './views/Usuarios'
+import Carrito from './views/Carrito'
+import PageNotFound from './views/PageNotFound';
+import Login from './views/Login';
+import Home from './views/Home';
+import Register from './views/Register';
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route exact path='/Inicio' element={<Inicio />} />
-          <Route exact path='/Productos' element={<Productos />} />
-          <Route exact path='/Usuarios' element={<Usuarios />} />
-          <Route exact path='/Inventario' element={<Inventario />} />
-          <Route path='*' element={<PageNotFound />} />
-        </Routes>
-      </div>
-    </Router>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='products' element={<Productos />} />
+        <Route path='usuarios' element={<Usuarios />} />
+        <Route path='carrito' element={<Carrito />} />
+      </Route>
+      <Route path='login' element={<Login />} />
+      <Route path='register' element={<Register />} />
+      <Route path='*' element={<PageNotFound />} />
+    </Routes>
   );
 }
-
 
 export default App;
