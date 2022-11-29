@@ -1,0 +1,10 @@
+.Carrito {
+    background-color: #f8f4fc;
+    padding: 30px 0px;
+    height: 88vh;
+}
+
+.Carrito-wrapper {
+    display: flexbox;
+    background-color: whitesmoke;
+}

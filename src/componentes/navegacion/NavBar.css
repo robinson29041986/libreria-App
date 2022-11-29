@@ -1,0 +1,187 @@
+.Header {
+    background-color: var(--global--color-white);
+    padding: 16px 0px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 6px 0px;
+    border-bottom: 1px solid #e6edf4;
+    color: #4c5469;
+}
+
+.Header .active {
+    color: #1b1f3b;
+}
+
+.Header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-column--left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 2;
+}
+
+.Header-column--right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Header-column {
+    display: flex;
+    align-items: center;
+}
+
+/* .Header-nav {
+    margin-left: 25px;
+} */
+
+
+.Header-ul {
+    display: flex;
+    align-items: center;
+}
+
+.Header-li {
+    padding: 5px;
+    margin: 5px 10px;
+    transition: 0.4s;
+}
+
+.Header-nav--link {
+    display: flex;
+    align-items: center;
+}
+
+.Header-icon--nav {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.Header-li:hover {
+    color: #1b1f3b;
+}
+
+.Header-notificacion {
+    display: flex;
+}
+
+.Header-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.Header-icon--link {
+    width: 20px;
+    height: 20px;
+}
+
+.Header-notification--icon {
+    position: relative;
+    top: 0px;
+    right: 3px;
+    background-color: var(--global--color-warning);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.Header-usernav {
+    position: relative;
+    cursor: pointer;
+}
+
+.Header-usernav-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.Header-popup {
+    background-color: var(--global--color-white);
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 6px 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+}
+
+.Header-popup.isActive {
+    z-index: 99;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.Header-popup--hr {
+    border-width: 0px 0px thin;
+    border-color: #e6edf4;
+    border-style: solid;
+}
+
+.Header-popup--link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    margin: 8px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.Header-popup--link:hover {
+    background-color: var(--global--color-background);
+    color: #1b1f3b;
+}
+
+@media screen and (max-width: 992px) {
+    .Header-nav {
+        display: none;
+    }
+
+    .Header-nav.isActive {
+        display: flex;
+        background-color: white;
+        position: absolute;
+        top: 64px;
+        left: 0px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Header-ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .Header-logo {
+        width: 80px;
+        height: auto;
+    }
+
+    .Header-usernav-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .Header-popup {
+        top: 40px;
+    }
+}

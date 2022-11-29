@@ -1,0 +1,55 @@
+.Products {
+    background-color: #f8f4fc;
+    padding: 30px 0px;
+    height: 88vh;
+}
+
+.Products-wrapper {
+    display: flexbox;
+    background-color: whitesmoke;
+}
+
+.Products-options {
+    background-color: white;
+}
+
+.Products-list {
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    box-shadow: rgb(0, 0, 0 / 12%) 0px 2px 6px 0px;
+    border: 1px solid #e6edf4;
+    border-radius: 8px;
+}
+
+.Products-list--table {
+    width: 200%;
+}
+
+.Products-list--table thead th {
+    background-color: #f8f4fc;
+    font-size: 0.8rem;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+.Products-list--table th {
+    font-weight: 400;
+    padding: 12px 24px;
+}
+
+.Products-list--table td {
+    font-weight: 600;
+    padding: 12px 24px;
+    color: #4c5469;
+}
+
+.Products-list--table tbody tr {
+    border-bottom: 1px solid #e6edf4;
+}
+
+.Products-list--table tr {
+    font-weight: 400;
+    padding: 12px 24px;
+}
