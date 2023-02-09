@@ -1,0 +1,16 @@
+.EditProduct-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.EditProduct-options {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+
+}
+
+.EditProducts-details {
+  display: flex;
+}
